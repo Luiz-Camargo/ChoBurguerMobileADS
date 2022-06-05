@@ -46,7 +46,7 @@ export default () => {
     return (
         <Container>
             <Titulo>
-                O melhor Hamburguer da cidade!
+                O melhor Hamburguer!
             </Titulo>
             <SubTitulo>
                 Cadastre-se! É rapidinho e de graça!
