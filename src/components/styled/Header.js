@@ -11,9 +11,10 @@ const Container = styled.SafeAreaView`
 `
 const Title = styled.Text`
 
-font-size: 22px;
-color: ${props=> props.theme.color};
+font-size: 34px;
+color: white;
 margin-left: 8px;
+font-weight: bold;
 `
 const Header =({ headerTitle }) => {
     return(

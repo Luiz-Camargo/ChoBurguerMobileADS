@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 16,
+        borderRadius: 8,
         position: 'absolute',
         bottom: 80,
         right: 16,
@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: themes.padrao.colors.brand.amarelo
+        color: themes.padrao.colors.neutral.neutral_100
     }
 })

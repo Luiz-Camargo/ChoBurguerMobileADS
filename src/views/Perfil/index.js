@@ -14,12 +14,12 @@ export default function Perfil(){
     }
     return (
         <>
-        <Header headerTitle="Chô Burguer" />
+        <Header headerTitle="BURGER" />
         <Container>
             <Button
                 onPress={sair}
-                title="Logout"
-                color={themes.padrao.colors.brand.amarelo}
+                title="SAIR DO SISTEMA"
+                color={themes.padrao.colors.brand.vermelho}
                 accessibilityLabel="Sair do sistema"
                 />            
         </Container>

@@ -60,7 +60,8 @@ export default ({ route }) => {
         <>
             <Header headerTitle="Produto" />
             <View>
-                <Text>Cadastro de Produtos</Text>
+                <Text style={styles.title}>Cadastro de Produtos</Text>
+                
                 <Text style={styles.label}>Nome</Text>
                 <TextInput
                     name='nome'
@@ -88,7 +89,7 @@ export default ({ route }) => {
                     onChangeText={(text) => setProduto({ ...produto, preco: text })}
                     value={produto.preco}
                     keyboardType='default'
-                    placeholder='Preço'                    
+                    placeholder='Preço'                  
                 />
                 <Text style={styles.label}>Tipo</Text>
                 <TextInput
@@ -107,24 +108,26 @@ export default ({ route }) => {
                     value={produto.tamanho}
                     keyboardType="default"
                     placeholder='Pequeno / Médio / Grande'                    
-                />                
+                />               
                 <Button
                     onPress={() => salvarProduto(produto)}
                     title='Salvar o Registro'
-                    color={themes.padrao.colors.brand.azul}
+                    color={themes.padrao.colors.brand.verde}
                     accessibilityLabel='Salvar os dados'
                 />
                  <Button
                     onPress={() => navigation.navigate('Produtos')}
                     title='Cancelar'
-                    color={themes.padrao.colors.brand.azul}
+                    style={styles.button}
+                    color={themes.padrao.colors.brand.vermelho_cancelar}
                     accessibilityLabel='Cancelar'
                 />
                 <Button
                     onPress={() => confirmaExclusaoRegistro(produto._id)}
                     title='Apagar'
+                    style={styles.button}
                     color={themes.padrao.colors.amarelo}
-                    accessibilityLabel='Cancelar'
+                    accessibilityLabel='Apagar'
                 />
 
             </View>
@@ -133,8 +136,13 @@ export default ({ route }) => {
 }
 const styles = StyleSheet.create({
     input: {
-        height: 40, margin: 8, borderWidth: 1,
-        borderColor: themes.padrao.colors.brand.vermelho, padding: 8
+        height: 40, margin: 8, borderWidth: 1, padding: 8,
+        borderRadius: 10
     },
-    label: { marginLeft: 8, marginTop: 8, marginBottom: 4, fontSize: 14 }
+    
+    label: {marginLeft: 8, marginTop: 8, marginBottom: 4, fontSize: 14, fontWeight: 'bold'
+    },
+
+    title: {fontSize: 20, marginLeft: 8, marginTop: 8, marginBottom: 4, fontWeight: 'bold'
+    }
 })

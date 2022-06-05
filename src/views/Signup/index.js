@@ -46,10 +46,10 @@ export default () => {
     return (
         <Container>
             <Titulo>
-                Bem vindo!
+                O melhor Hamburguer da cidade!
             </Titulo>
             <SubTitulo>
-                O melhor Hamburguer da cidade!
+                Cadastre-se! É rapidinho e de graça!
             </SubTitulo>
             <InputArea>
                 <IconInput

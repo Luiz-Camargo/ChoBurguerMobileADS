@@ -6,7 +6,7 @@ import Header from '../../components/styled/Header'
 export default function Home(){
     return (
         <>
-        <Header headerTitle="Chô Burguer" />
+        <Header headerTitle="BURGER" />
         <Container>
         <Hamburguer />
             <Title>Início</Title>

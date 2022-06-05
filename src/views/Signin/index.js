@@ -56,17 +56,17 @@ export default () => {
             </ImagemSVG>
             <InputArea>
                 <Titulo>
-                    Bem vindo de volta!
+                    Bem vindos ao Burger!
                 </Titulo>
                 <IconInput
                     icon="email"
-                    placeholder="Digite o seu e-mail"
+                    placeholder="E-mail"
                     value={emailField}
                     onChangeText={t => setEmailField(t)}
                 />
                 <IconInput
                     icon="lock"
-                    placeholder="Digite a sua senha"
+                    placeholder="Senha"
                     value={senhaField}
                     onChangeText={t => setSenhaField(t)}
                     password={true}

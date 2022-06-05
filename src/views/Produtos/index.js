@@ -34,13 +34,13 @@ export default function Produtos(){
             <ScrollView>
             {loading &&
             <ActivityIndicator size="large" 
-                color={themes.padrao.colors.brand.laranja} />
+                color={themes.padrao.colors.brand.vermelho} />
             }
             {listaProdutos.length === 0 && !loading &&
             <Text>Ops! Não existe nenhum produto cadastrado.</Text>
             }
             <Text>Relação de Produtos &nbsp;
-             <MaterialCommunityIcons name="cloud-refresh" size={16} color={themes.padrao.colors.brand.laranja} onPress={() => getProdutos()} />
+             <MaterialCommunityIcons name="cloud-refresh" size={16} color={themes.padrao.colors.brand.vermelho} onPress={() => getProdutos()} />
              </Text>
             {listaProdutos.map((produto, k) => (
                 <ListaProduto key={k} data={produto} />

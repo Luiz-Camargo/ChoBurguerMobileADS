@@ -3,10 +3,13 @@ import styled from 'styled-components/native'
 import themes from '../../themes'
 
 export const Titulo = styled.Text`
-font-size: 22px;
-color: ${props => props.theme.color};
+font-size: 32px;
+color: ${themes.padrao.colors.brand.rosa};
 margin-top: 16px;
 margin-bottom: 16px;
+font-weight: bold;
+margin-left: auto;
+margin-right: auto;
 `
 
 export const SubTitulo = styled.Text`

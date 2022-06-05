@@ -11,7 +11,8 @@ align-items: center;
 `
 export const ImagemSVG = styled.View`
 transform: ${props => props.display === 'none' ? `scale(0.7)` : `scale(1,1)`};
-flex: 2;
+flex: 1;
+margin-top: 25px;
 `
 export const InputArea = styled.ScrollView`
 padding: 16px;
